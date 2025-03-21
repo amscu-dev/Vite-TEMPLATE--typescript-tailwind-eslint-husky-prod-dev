@@ -16,6 +16,12 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": [".prettierrc.cjs", ".eslintrc.cjs", "src"],
+  "include": [
+    ".prettierrc.cjs",
+    ".eslintrc.cjs",
+    "postcss.config.js",
+    "tailwind.config.js",
+    "src"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
