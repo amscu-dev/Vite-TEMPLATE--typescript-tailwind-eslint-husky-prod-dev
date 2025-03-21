@@ -4,6 +4,7 @@ function App() {
       <p className="rounded-md bg-slate-100 px-20 py-8 text-6xl font-extralight text-violet-500">
         hello vite
       </p>
+      <p>Test husky</p>
     </div>
   );
 }
