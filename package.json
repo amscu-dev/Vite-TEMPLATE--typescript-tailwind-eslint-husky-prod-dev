@@ -10,7 +10,14 @@
     "test": "vitest",
     "lint": "eslint --ext .js,.cjs,.ts,.tsx .",
     "lint:fix": "eslint --ext .js,.cjs,.ts,.tsx . --fix",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx,js,jsx}": [
+      "prettier --write --ignore-unknown",
+      "eslint --no-fix"
+    ]
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -32,7 +39,9 @@
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.37.1",
     "eslint-plugin-react-hooks": "^4.6.2",
+    "husky": "^8.0.3",
     "jsdom": "^25.0.1",
+    "lint-staged": "^13.2.3",
     "postcss": "^8.5.3",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
